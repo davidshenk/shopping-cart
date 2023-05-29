@@ -14,7 +14,7 @@ const Favourites = () => {
         <div className="row">
           {favourites?.length > 0 ? (
             // favouritesItems.map((favouritesItem) => <FavoriteItem key={favouritesItem.id} item={favouritesItem} />)
-            favouritesItems.map((favouritesItem) => <CategoryItem key={favouritesItem.id} item={favouritesItem} classes='col-6'/>)
+            favouritesItems.map((favouritesItem) => <CategoryItem key={favouritesItem.id} item={favouritesItem} classes='col-2 mt-4'/>)
           ) : (
             <h1>עדיין אין מועדפים</h1>
           )}

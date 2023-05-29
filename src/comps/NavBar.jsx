@@ -1,6 +1,6 @@
 import React from 'react';
 import { Link, Outlet } from 'react-router-dom';
-import { Cart4, SuitHeart } from 'react-bootstrap-icons';
+import { Cart4, Shop, SuitHeart } from 'react-bootstrap-icons';
 import Home from './Home';
 
 const NavBar = () => {
@@ -9,8 +9,8 @@ const NavBar = () => {
     
       <nav className="navbar navbar-expand-lg bg-body-tertiary sticky-top">
         <div className="container-fluid">
-          <Link to="/" className="navbar-brand" href="#">
-            My-Shopp
+          <Link to="/" className="navbar-brand ms-3" href="#">
+            <Shop size={30}/>
           </Link>
           <button
             className="navbar-toggler"
@@ -24,15 +24,15 @@ const NavBar = () => {
             <span className="navbar-toggler-icon"></span>
           </button>
           <div className="collapse navbar-collapse" id="navbarNav">
-            <ul className="navbar-nav">
-              <li className="nav-item">
-                <Link to="/" className="nav-link mt-1 text-info">
+            <ul className="navbar-nav ">
+              {/* <li className="nav-item">
+                <Link to="/" className="nav-link fw-bold">
                   Home
                 </Link>
-              </li>
-              <li className="nav-item">
+              </li> */}
+              <li className="nav-item mx-5">
                 <Link to="/cart" className="nav-link">
-                  <Cart4 size={30} color={'green'}/>
+                  <Cart4 size={30} color={''}/>
                 </Link>
               </li>
               <li className="nav-item">
